@@ -6,10 +6,10 @@ server:
 
 spring:
   mail:
-    host: smtp.mailtrap.io
+    host: smtp.gmail.com
     port: 587
-    username: your_username
-    password: your_password
+    username: silviagfernandes1@gmail.com
+    password: askmabncgdexgbuz
     properties:
       mail:
         smtp:
