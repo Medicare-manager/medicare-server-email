@@ -1,14 +1,14 @@
 package com.medicare.email_server.infrastrucure.configuration.rabittMQ
 
-import org.springframework.amqp.core.Queue
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter
 
 @Configuration
-class RabbitMQConfig {
+class RabbitConfig {
 
     @Bean
-    fun emailQueue(): Queue {
-        return Queue("login-email-queue", true)
+    fun messageConverter(): Jackson2JsonMessageConverter {
+        return Jackson2JsonMessageConverter()
     }
 }
